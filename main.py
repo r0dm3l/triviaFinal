@@ -52,16 +52,17 @@ print(AZUL + "", comodinAcierto,
 print(ROJO + "", castigoError,
       " puntos menos por cada respuesta incorrecta" + RESET)
 print(espacio)
-for x in range(1, 5, +1):
+for x in range(5, 0, -1):
     print(x)
     time.sleep(1)
 
 seguir = True
-intentos = 0
+intentos = 1
 print(espacio)
 while seguir == True:
     correcto = 0
     falso = 0
+    print("intento numero:", intentos)
 
     #pregunta 01 ------------------------------------------
 
@@ -401,7 +402,7 @@ while seguir == True:
     time.sleep(4)
 
     intentos += 1
-    print("intento numero:", intentos)
+    
     time.sleep(2)
     print(ROJO + "¿quieres seguir jugando?" + RESET)
     time.sleep(2)
